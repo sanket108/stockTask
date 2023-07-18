@@ -2,7 +2,7 @@
   "name": "stocktask",
   "version": "1.0.0",
   "description": "this is assignment problem of stock",
-  "main": "dist/server.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon",
     "build": "tsc && tsc-alias",
