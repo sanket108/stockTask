@@ -24,7 +24,8 @@
       "@config": ["config/*"],
       "@controllers/*": ["controllers/*"],
       "@routers/*": ["routers/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@services/*": ["services/*"]
     }
   },
   "module": {

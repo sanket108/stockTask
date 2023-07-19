@@ -24,7 +24,7 @@ describe('Controller', () => {
     it('should return stock detail when SKU is found', async () => {
         const expectedResponse = {
             sku: "NAX148363/42/24",
-            stock: 7707
+            qty: 7707
         };
         await controller.getStockDetailBySku(req as Request, res as Response);
         expect(res.status).toHaveBeenCalledWith(200);
