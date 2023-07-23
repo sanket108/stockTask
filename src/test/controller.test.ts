@@ -32,10 +32,17 @@ describe('Controller', () => {
     });
 
     it('should return 404 when SKU is not found and no transactions', async () => {
-      req.body.sku = 'example-sku';
-      await controller.getStockDetailBySku(req as Request, res as Response);
+        req.body.sku = 'example-sku';
+        await controller.getStockDetailBySku(req as Request, res as Response);
 
-      expect(res.status).toHaveBeenCalledWith(404);
-      expect(res.send).toHaveBeenCalledWith({ message: 'No Data Found!' });
+        expect(res.status).toHaveBeenCalledWith(404);
+        expect(res.send).toHaveBeenCalledWith({ message: 'No Data Found!' });
+    });
+
+    it('should return 400 when SKU key is not present in body', async () => {
+        delete req.body.sku;
+        await controller.getStockDetailBySku(req as Request, res as Response);
+        expect(res.status).toHaveBeenCalledWith(400);
+        expect(res.send).toHaveBeenCalledWith({ message: 'Invalid request body!' });
     });
 });

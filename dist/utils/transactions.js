@@ -729,7 +729,7 @@ const transactions = [
     {
         "sku": "DTW874360/97/81",
         "type": "order",
-        "qty": 9
+        "qty": 1
     },
     {
         "sku": "FZV366142/87/47",
@@ -1459,7 +1459,7 @@ const transactions = [
     {
         "sku": "DTW874360/97/81",
         "type": "order",
-        "qty": 8
+        "qty": 1
     },
     {
         "sku": "IQZ340003/37/30",
@@ -1704,7 +1704,7 @@ const transactions = [
     {
         "sku": "DTW874360/97/81",
         "type": "order",
-        "qty": 4
+        "qty": 1
     },
     {
         "sku": "MMU823900/96/22",
